@@ -1,0 +1,410 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h6 {
+    font-size: 20px;
+    color: black;
+    font-weight: normal;
+}
+
+header {
+    background-color: #7897AB;
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content p {
+    font-size: 45px;
+    font-family: 'Smooch', cursive;
+    background-color: #f5cfe4;
+    max-width: 500%;
+    color: rgb(153, 98, 158);
+}
+
+h3 {
+    padding-top: 0%;
+    color: #fff;
+    text-align: center;
+}
+
+.degree p {
+    padding-left: 12%;
+}
+
+.degree ul {
+    color: rgb(3, 3, 58);
+    padding: 0%;
+    display: block;
+    width: 100%;
+    background-color: #F3D1F4;
+    height: 385.2px;
+}
+
+.degree h5 {
+    text-align: center;
+    color: #eff1f1;
+    background-color: #265068;
+}
+
+.degree ul li p {
+    font-size: 12px;
+    color: white;
+    margin-top: 0%;
+}
+
+.content {
+    max-width: 80%;
+    width: 65%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+p {
+    color: rgb(17, 1, 1);
+}
+
+.card {
+    margin-top: 1%;
+    margin-left: 1%;
+    box-shadow: 0px 8px 16px 0 rgba(175, 48, 192, 0.925);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 4px;
+    float: left;
+}
+
+.card:hover {
+    box-shadow: 0 8px 8px 0 rgba(64, 232, 238, 0.651);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container img {
+    padding: 2px 16px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 2px 16px;
+    overflow: hidden;
+}
+
+h4 {
+    padding: 3%;
+    font-weight: normal;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    display: flow-root;
+    align-items: center;
+    min-height: 100vh;
+    background: #18191f;
+}
+
+.media ul {
+    padding-left: 5%;
+    position: relative;
+    display: flex;
+}
+
+.media ul li {
+    position: relative;
+    list-style: none;
+}
+
+.media ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #18191f;
+    line-height: 55px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 15px;
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.05), 3px 3px 3px rgba( 0, 0, 0, 0.2);
+}
+
+.media ul li .fa {
+    font-size: 22px;
+    color: #555;
+}
+
+.media ul li a:hover .fa {
+    color: #00f2ffaf;
+    text-shadow: 0 0 15px #00f2ffde;
+}
+
+
+/* Academics */
+
+.edu {
+    color: white;
+    display: block;
+    margin-left: 2%;
+    margin-top: 2%;
+    float: left;
+    padding: 10px;
+    box-shadow: 0 8px 8px 0 rgba(133, 84, 130, 0.651);
+}
+
+
+/* Float columns side by side */
+
+.column {
+    margin-left: 2%;
+    margin-top: 2%;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    box-shadow: 0 8px 8px 0 rgba(133, 84, 130, 0.651);
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pane {
+    border-radius: 2%;
+    margin-top: 5%;
+    padding: 16px;
+    text-align: center;
+    background-color: #48ca7acc;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, a black background color */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text */
+
+.numbertext {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.circular {
+    border-radius: 50%;
+}
+
+
+/* Percentage Bar */
+
+.resume_skills .table {
+    background-color: #0a0a0a;
+}
+
+.resume_skills .table tr td {
+    display: flex;
+    margin-bottom: 10px;
+    color: #37aeda;
+    justify-content: space-between;
+    align-items: center;
+    height: 112px;
+}
+
+.resume_skills .table tr td .skill_name {
+    width: 25%;
+}
+
+.resume_skills .table tr td .skill_progress {
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #123d4e;
+    position: relative;
+}
+
+.resume_skills .table tr td .skill_per {
+    width: 15%;
+}
+
+.resume_skills .table tr td .skill_progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(138, 205, 250);
+}
+
+.skill_name {
+    margin: 4%;
+    padding: 2%;
+}
+
+.biodata {
+    padding-top: 4%;
+    color: rgb(6, 9, 12);
+    padding-left: 5%;
+    background-color: #533E85;
+    height: 500px;
+}
+
+footer {
+    margin-top: 2%;
+    padding: 1px;
+    background-color: #8f979b;
+}
+
+.nav_bar {
+    margin-left: 19%;
+    padding-top: 2%;
+    float: left;
+}
+
+.nav_bar a {
+    background-color: #443d44;
+    border-radius: 6%;
+    float: left;
+    color: #28925d;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    /* color: #5a96c7; */
+}
+
+.nav_bar a:hover {
+    color: #d485f8;
+}
+
+.data pre {
+    margin-left: 4%;
+    font-size: 13.4px;
+    font-weight: 100%;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.ul .li .academic .year {
+    background-color: #2196F3;
+}
+
+@media screen and (max-width: 700px) {
+    .nav_bar {
+        width: 40%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.mySlides .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.mySlides:hover .overlay {
+    opacity: 1;
+}
